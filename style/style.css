@@ -129,10 +129,7 @@ h4{
     text-align: center;
 }
 
-.section-services{
-    margin-top: 78px;
-    margin-bottom: 122px;
-}
+
 
 .services{
     display: flex;
@@ -142,6 +139,8 @@ h4{
     font-size: 18px;
     font-weight: 600;
     color: #222222;
+    margin-top: 78px;
+    margin-bottom: 122px;
 }
 
 .services-item{
@@ -149,7 +148,7 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 56px;
+    max-width: 276px;
 }
 
 .icon{
@@ -183,9 +182,7 @@ h4{
 }
 */
 .section-form{
-    width: 1400px;
-    height: 676px;
-    margin: 0 auto;
+    display: flex;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;   
@@ -193,7 +190,7 @@ h4{
 
 .title-white-h2{
     color: #ffffff;
-    padding-top: 110px;
+    margin-top: 110px;
     margin-bottom: 24px;
 }
 
@@ -201,24 +198,34 @@ h4{
     color: #ffffff;
 }
 
-form{
-    display: flex;
+.form{
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-input{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    text-overflow: ellipsis;
 }
 
 
-input{
+.input{
     font-family: "Monserrat", sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     display: block;
-    width: 458px;
-    height: 52px;
+    width: 458px;/*
+    height: 52px;*/
     border-radius: 5px;
     color: #515151;
+    padding: 20px;/*
     margin-bottom: 26px;
-    margin-right: 28px;
+    margin-right: 28px;*/
 }
 
 input::placeholder{
@@ -253,11 +260,13 @@ textarea{
     text-transform: uppercase;
     color: #515151;
     border-radius: 5px;
-}
-
-textarea::placeholder{
+    text-overflow: ellipsis;
     padding: 20px;
 }
+/*
+textarea::placeholder{
+    padding: 20px;
+}*/
 
 button{
     background-color: #fed136;
@@ -268,12 +277,12 @@ button{
     font-weight: 600;
     width: 240px;
     height: 66px;
-
+    margin-left: 352px;
 }
-
+/*
 .button-form{
     position: absolute;
     top: 100%;
     left: 38%;
     
-}
+}*/

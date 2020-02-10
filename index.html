@@ -74,13 +74,15 @@
         
 
 <form action="#">
-    <div class="form-input">
-        <input type="user-name" placeholder="Your Name*" required>
-        <input type="user-email" placeholder="Your E-mail *" required>
-        <input type="user-subject" placeholder="Subject">
+    <div class="form">
+        <div class="form-input">
+        <input class="input" type="text" name="user-name" placeholder="Your Name*" required>
+        <input class="input" type="email" name="user-email" placeholder="Your E-mail *" required>
+        <input class="input" type="text" name="user-subject" placeholder="Subject">
     </div>
         <textarea name="user-message" cols="40" rows="15" placeholder="Your Message*" required></textarea>
-    <div class="button-form">
+    </div>
+        <div class="button-form">
         <button>Send Message</button>
     </div>
 </form>
