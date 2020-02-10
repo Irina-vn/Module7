@@ -88,11 +88,11 @@ ul{
 }
 
 .list-item{
-    padding-right: 40px;
+    margin-right: 40px;
 }
 
 .list-item:nth-last-child(1){
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .list-item a:hover{
@@ -121,6 +121,7 @@ h3{
     margin: 0px;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 76px;
 }
 
 h4{
@@ -202,7 +203,6 @@ h4{
 
 form{
     display: flex;
-    margin-top: 80px;
     position: relative;
 }
 
