@@ -44,6 +44,7 @@ html{
 
 
 body{
+    font-family: "Montserrat" , "Roboto Slap" , "'PT Serif" , sans-serif, serif;
         color: #777777;
         font: size 14px;
         font-weight: 400;
@@ -69,7 +70,7 @@ ul{
 .navigation{
     display: flex;
     justify-content: space-between;
-    margin-top: 44px;
+    padding-top: 44px;
     margin-bottom: 122px;
 }
 
@@ -82,7 +83,7 @@ ul{
 
 .list a{
     text-decoration: none;
-    font-family: "Monserrat" , sans-serif;
+    font-family: "Montserrat" , sans-serif;
     color: #222222;
     font-weight: 400;
 }
@@ -104,13 +105,14 @@ ul{
 }
 
 h2{
-    font-family: "monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: #222222;
     margin: 0px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 h3{
@@ -120,7 +122,6 @@ h3{
     font-style: italic;
     margin: 0px;
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 76px;
 }
 
@@ -135,11 +136,11 @@ h4{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-family: "Monserrat" , sans-serif;
+    font-family: "Montserrat" , sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #222222;
-    margin-top: 78px;
+    color: #222222;/*
+    margin-top: 78px;*/
     margin-bottom: 122px;
 }
 
@@ -196,6 +197,7 @@ h4{
 
 .title-white-h3{
     color: #ffffff;
+    margin-top: 0px;
 }
 
 .form{
@@ -214,7 +216,7 @@ h4{
 
 
 .input{
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -254,7 +256,7 @@ textarea{
     width: 456px;
     height: 210px;
     resize: none;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -277,12 +279,12 @@ button{
     font-weight: 600;
     width: 240px;
     height: 66px;
-    margin-left: 352px;
-}
-/*
-.button-form{
-    position: absolute;
-    top: 100%;
-    left: 38%;
+    border-radius: 5px;
+    margin-bottom: 114px;
     
-}*/
+}
+
+.button-form{
+    display: flex;
+    justify-content: center;  
+}
