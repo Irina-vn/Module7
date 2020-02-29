@@ -35,12 +35,26 @@ html{
          url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  @font-face{
-  font-family: 'PT Serif', serif;
-  font-style: italic;
-  font-weight: 400;
-  src: local('../fonts/PTSerif-Italic.ttf')
-  }
+  /* pt-serif-regular - latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-serif-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Serif'), local('PTSerif-Regular'),
+          url('../fonts/pt-serif-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pt-serif-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+}
+  /* pt-serif-italic - latin */
+  @font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/pt-serif-v11-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+         url('../fonts/pt-serif-v11-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pt-serif-v11-latin-italic.woff') format('woff'), /* Modern Browsers */
+         }
 
 
 body{
@@ -116,7 +130,7 @@ h2{
 }
 
 h3{
-    font-family: "" , serif;
+    font-family: "PT Serif" , serif;
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -126,6 +140,9 @@ h3{
 }
 
 h4{
+    font-family: "Montserrat" , sans-serif;
+    font-size: 18px;
+    font-weight: 600;
     margin: 0px;
     text-align: center;
 }
@@ -221,13 +238,10 @@ h4{
     font-weight: 600;
     text-transform: uppercase;
     display: block;
-    width: 458px;/*
-    height: 52px;*/
+    width: 458px;
     border-radius: 5px;
     color: #515151;
-    padding: 20px;/*
-    margin-bottom: 26px;
-    margin-right: 28px;*/
+    padding: 20px;
 }
 
 input::placeholder{
@@ -235,19 +249,19 @@ input::placeholder{
 }
 
 
-input:valid:required{
+input:focus:valid:required{
     outline: 1px solid #04af3d;
 }
 
-input:invalid:required{
+input:focus:invalid:required{
     outline: 1px solid #c20303;
 }
 
-textarea:valid:required{
+textarea:focus:valid:required{
     outline: 1px solid #04af3d;
 }
 
-textarea:invalid:required{
+textarea:focus:invalid:required{
     outline: 1px solid #c20303;
 }
 
